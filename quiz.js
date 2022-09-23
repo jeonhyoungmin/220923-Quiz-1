@@ -8,9 +8,9 @@ const setDomComponent = (tagName, content, attributeName, props) => {
       if(getDataArr.length === 0) {
         let tempArray = [];
         tempArray.push("<");
-        tempArray.push(tagName + '\u00A0' + attributeName + "=\"");
+        tempArray.push(tagName + ' ' + attributeName + "=\"");
         for(const keys in props) {
-          tempArray.push( '\u00A0' + keys + ":" + props[keys] + ";");
+          tempArray.push( ' ' + keys + ":" + props[keys] + ";");
         };
         tempArray.push("\">");
         getDataArr.push(tempArray.join(''));
